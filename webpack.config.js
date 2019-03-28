@@ -1,65 +1,70 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const merge = require('webpack-merge');
+const pug = require('./webpack/pug');
+const devserver = require('./webpack/devserver');
+const sass = require('./webpack/sass');
+const extractCSS = require('./webpack/css.extract');
+const css = require('./webpack/css');
+const sourceMap = require('./webpack/sourceMap');
+const images = require('./webpack/images');
+const babel = require('./webpack/babel');
+const favicon = require('./webpack/favicon');
 
-const pug = {
-  test: /\.pug$/,
-  use: ['html-loader?attrs=false', 'pug-html-loader']
+const PATHS = {
+  source: path.join(__dirname, 'src'),
+  build: path.join(__dirname, 'dist'),
 };
 
-const config = {
-  entry: './src/app.js',
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js'
-  },
-  module: {
-    rules: [
-      pug,
-      {
-        test: /\.scss$/,
-        use: ExtractTextPlugin.extract(
-          {
-            fallback: 'style-loader',
-            use: [
-              {
-                loader: 'css-loader'      
-              },
-              {
-                loader: 'resolve-url-loader'
-              },
-              {
-                loader: 'sass-loader'
-              }
-            ]
-          })
-      },
-      {
-        test: /\.(gif|png|jpe?g|svg)$/i,
-        use: ["file-loader?name=[name].[ext]&outputPath=images/",
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              bypassOnDebug: true,
-            }
-          }
-        ]
-      },
+const common = merge([
+  {
+    entry: PATHS.source + '/app.js',
+    output: {
+      path: PATHS.build,
+      filename: './js/[name].js',
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: PATHS.source + '/index.pug',
+      })
     ],
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          'common': {
+            minChunks: 2,
+            chunks: 'all',
+            name: 'common',
+            priority: 10,
+            enforce: true,
+          },
+        },
+      },
+    },
+    
   },
+  pug(),
+  images(),
+  babel(),
+]);
 
-  plugins: [
-    new ExtractTextPlugin(
-      {
-        filename: 'main.css',
-      }
-    ),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'src/index.pug',
-      inject: false
-    }),
-
- ]
+module.exports = function(env, argv) {
+  if (argv.mode === 'production') {
+    return merge([
+      common,
+      extractCSS(),
+      favicon(),
+    ]);
+  }
+  if (argv.mode === 'development') {
+    return merge([
+      common,
+      devserver(),
+      sass(),
+      css(),
+      sourceMap(),
+    ]);
+  }
 };
-module.exports = config;
