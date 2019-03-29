@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 7.5rem;
+  width: 88.5%;
+
+
+  background: orange;
+
+  min-height: 1200px;
+}
+
+.column--left {
+  border: 1px solid red;
+  width: 37%;
+}
+
+.column--right {
+  width: 56.25%;
+  border: 1px solid green;
+}
