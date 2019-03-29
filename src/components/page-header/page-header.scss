@@ -1,0 +1,40 @@
+.page-header {
+  padding-top: 1.2rem;
+
+  &__logo {
+    display: block;
+    background-color: $main-color;
+    border-radius: 50%;
+    border: 1.45rem solid white;
+    box-shadow: 0 0 0 1px $main-color;
+    height: 23.15rem;
+    margin: 0 auto 3.7rem;
+    width: 23.15rem;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+
+    &--light {
+      font-family: 'Myriad Pro - Light Semi Ext';
+      font-weight: normal;
+      line-height: 4.52rem;
+      font-size: $l-font;
+    }
+
+    &--bold {
+      font-weight: 700;
+      letter-spacing: .3rem;
+      font-size: $xl-font;
+      line-height: 6.5rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: $m-font;
+    padding-top: .2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
