@@ -1,5 +1,6 @@
 .page-header {
   padding-top: 1.2rem;
+  margin-bottom: 7.3rem;
 
   &__logo {
     display: block;
@@ -20,7 +21,7 @@
       font-family: 'Myriad Pro - Light Semi Ext';
       font-weight: normal;
       line-height: 4.52rem;
-      font-size: $l-font;
+      font-size: 5.2rem;
     }
 
     &--bold {
@@ -32,7 +33,8 @@
   }
 
   &__subtitle {
-    font-size: $m-font;
+    font-size: 2.5rem;
+    letter-spacing: .05rem;
     padding-top: .2rem;
     text-align: center;
     text-transform: uppercase;
