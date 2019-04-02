@@ -3,16 +3,17 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 7.5rem;
-  width: 88.5%;
+  padding-top: 11.4rem;
+  width: 90.4%;
 }
 
 .column--left {
   border: 1px solid red;
-  width: 38.75%;
+  width: 38.6%;
 }
 
 .column--right {
-  width: 56.25%;
+  width: 56.3%;
   border: 1px solid green;
+  min-height: 400rem;
 }
