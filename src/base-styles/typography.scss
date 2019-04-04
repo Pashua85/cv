@@ -9,6 +9,16 @@
 }
 
 @font-face {
+  font-family: 'Myriad Pro Bold';
+  src: url('./fonts/MyriadProBold.eot');
+  src:  url('./fonts/MyriadProBold.woff') format('woff'), 
+    url('./fonts/MyriadProBold.ttf') format('truetype'), 
+    url('./fonts/MyriadProBold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Myriad Pro - Light Semi Ext';
   src: url('./fonts/Myriad-Pro-Light-SemiExtended_31641.eot');
   src: url('./fonts/Myriad-Pro-Light-SemiExtended_31641.woff') format('woff'), 

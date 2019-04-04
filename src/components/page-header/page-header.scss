@@ -4,7 +4,7 @@
 
   &__logo {
     display: block;
-    background-color: yellow;
+    background-color: $main-color;
     border-radius: 50%;
     border: 2.2rem solid white;
     box-shadow: 0 0 0 1px $main-color;
@@ -20,21 +20,20 @@
     &--light {
       font-family: 'Myriad Pro - Light Semi Ext';
       font-weight: normal;
-      // line-height: 4.52rem;
       font-size: 8.3rem;
     }
 
     &--bold {
-      font-weight: 700;
-      letter-spacing: .3rem;
       font-size: $xl-font;
-      // line-height: 6.5rem;
+      margin-top: -2.8rem;
+      font-family: 'Myriad Pro Bold';
     }
   }
 
   &__subtitle {
-    font-size: 2.5rem;
+    font-size: 3.87rem;
     letter-spacing: .05rem;
+    margin-top: -.8rem;
     padding-top: .2rem;
     text-align: center;
     text-transform: uppercase;
