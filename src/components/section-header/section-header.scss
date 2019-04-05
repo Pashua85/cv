@@ -1,16 +1,20 @@
 .section-header {
   display: flex;
+
   align-items: center;
+  border: thin solid green;
   margin-bottom: 1.5rem;
 
   &__icon {
-    width: 7.15rem;
-    height: 7.15rem;
+    width: 11.07rem;
+    height: 11.07rem;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: contain;
+    border: thin solid green;
 
     &--profile {
-      width: 7.4rem;
+      width: 11.45rem;
       background-image: url('./components/section-header/images/PROFILE_ICON.png');
     }
   }
@@ -18,15 +22,15 @@
   &__title {
     color: $main-color;
     font-size: $l-font;
-    font-weight: 700;
+    font-family: 'Myriad Pro Bold';
+    color: red;
     text-transform: uppercase;
-    margin: 0 .8rem -.9rem 1rem;
-    letter-spacing: .2rem;
+    margin: 0 1.3rem -.9rem 1.3rem;
   }
 
   &__line {
-    height: .55rem;
+    height: .7rem;
     flex-grow: 1;
-    background-color: $main-color;
+    background-color: red;
   }
 }

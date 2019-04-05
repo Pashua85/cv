@@ -1,7 +1,8 @@
-mixin section-header(title, className)
-  - className = className || ''
+mixin section-header(title, classNameIcon, classNameSection)
+  - classNameIcon = classNameIcon || ''
+  - classNameSection = classNameSection || '' 
   .section-header
-    .section-header__icon(class=className)
+    .section-header__icon(class=classNameIcon)
     .section-header__title= title
     .section-header__line
 

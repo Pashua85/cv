@@ -1,0 +1,10 @@
+mixin list-item(object, titleClass)
+  - titleClass = titleClass || ''
+  li.list-item
+    .list-item__row
+      h3.list-item__title(class=titleClass)= object.title
+      .list-item__duration
+        .list-item__duration-start= object.durationStart
+        .list-item__duration-end= object.durationEnd
+    .list-item__subtitle= object.subtitle 
+    .list-item__details= object.details

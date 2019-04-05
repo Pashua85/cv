@@ -1,0 +1,8 @@
+include ../list-item/list-item.pug
+
+mixin list(array, titleClass)
+  ul.list
+    each object in array
+      +list-item(object, titleClass)
+
+
