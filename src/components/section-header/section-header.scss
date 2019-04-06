@@ -6,15 +6,15 @@
   margin-bottom: 1.5rem;
 
   &__icon {
-    width: 11.07rem;
-    height: 11.07rem;
+    width: 11.45rem;
+    height: 11.45rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     border: thin solid green;
 
     &--profile {
-      width: 11.45rem;
+      height: 11.07rem;
       background-image: url('./components/section-header/images/PROFILE_ICON.png');
     }
   }
@@ -25,11 +25,17 @@
     font-family: 'Myriad Pro Bold';
     color: red;
     text-transform: uppercase;
-    margin: 0 1.3rem -.9rem 1.3rem;
+    margin: 0 1.3rem -.7rem 1.4rem;
+
+    &--right {
+      margin: 0 1.3rem -.7rem 3rem;
+
+    }
   }
 
   &__line {
     height: .7rem;
+    margin-top: -.3rem;
     flex-grow: 1;
     background-color: red;
   }
