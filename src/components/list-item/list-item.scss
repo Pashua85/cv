@@ -1,0 +1,60 @@
+.list-item {
+  padding-left: 8.2rem;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 1.8rem;
+  }
+
+  &::before {
+    display: table;
+    content: '';
+    position: absolute;
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 50%;
+    background-color: yellow;
+    left: 0;
+    top: 0;
+    margin-top: .7rem;
+    margin-left: 1.8rem;
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: .4rem;
+  }
+
+  &__title {
+    margin-right: 2.6rem;
+    text-transform: uppercase;
+    font-size: 3.94rem;
+    font-family: 'Myriad Pro Bold';
+    color: yellow;
+
+    &--blue {
+      color: $main-color;
+    }
+  }
+
+  &__duration {
+    color: red;
+    display: flex;
+    font-size: 3.94rem;
+  }
+
+  &__duration-start {
+    margin-left: .9rem;
+    margin-right: .9rem;
+  }
+
+  &__duration-end {
+    margin-left: .9rem;
+  }
+
+  &__subtitle {
+    font-size: 3.948rem;
+    text-transform: uppercase;
+    margin-bottom: .8rem;
+  }
+}

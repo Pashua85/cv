@@ -1,6 +1,7 @@
 include ../section-header/section-header.pug
 include ../list/list.pug
-- var education = [{ title: 'Master Degree',durationStart: 'Feb 2011',durationEnd: 'Jul 2014', subtitle: 'Univercity Name', details: 'some text Lorem'}]
-.education
+- var education = [{ title: 'Master Degree',durationStart: 'Feb 2011',durationEnd: 'Jun 2014', subtitle: 'University Name', details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean commodo ligula eget color. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultriciec nec, pellentesque.'}, { title: 'Master Degree',durationStart: 'Feb 2011',durationEnd: 'Jun 2014', subtitle: 'University Name', details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean commodo ligula eget color. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultriciec nec, pellentesque.'}, { title: 'Master Degree',durationStart: 'Feb 2011',durationEnd: 'Jun 2014', subtitle: 'University Name', details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean commodo ligula eget color. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultriciec nec, pellentesque.'}, { title: 'Master Degree',durationStart: 'Feb 2011',durationEnd: 'Jun 2014', subtitle: 'University Name', details: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean commodo ligula eget color. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultriciec nec, pellentesque.'}]
+
+.education.page__section
   + section-header('Education', 'section-header__icon--education')
-  + list(education)
+  + list(education, 'list-item__title--blue')
