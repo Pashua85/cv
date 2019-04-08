@@ -1,0 +1,53 @@
+.soft {
+  padding-top: 2rem;
+  margin-bottom: 1.8rem;
+  
+
+  &__title {
+    color: red;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 1.8rem;
+  }
+
+  &__scale {
+    width: 42.81rem;
+    height: 3.2rem;
+    background-color: yellow;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: table;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: red;
+      height: 100%;
+    }
+
+    &--photoshop::before {
+      width: 91.1%;
+    }
+
+    &--dreamweaver::before {
+      width: 83.1%;
+    }
+
+    &--illustrator::before {
+      width: 70.5%;
+    }
+
+    &--after-effects::before {
+      width: 61.6%;
+    }
+
+    &--indesign::before {
+      width: 56.2%;
+    }
+
+    &--html-css3::before {
+      width: 91.1%;
+    }
+  }
+}
