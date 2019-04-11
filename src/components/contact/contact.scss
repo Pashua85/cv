@@ -1,0 +1,27 @@
+.contact {
+  padding-right: 2.75rem;
+
+  &__list {
+    padding-top: 3.1rem;
+  }
+
+  &__row:not(:last-child) {
+    margin-bottom: 4.5rem;
+  }
+
+  &__title {
+    display: inline-block;
+    color: red;
+    font-size: 3.2rem; //?
+    font-family: 'Myriad Pro Bold';
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: yellow;
+    width: 30.3%;
+  }
+
+  &__text {
+    display: inline-block;
+    font-size: 3.2rem;
+  }
+}
