@@ -9,22 +9,25 @@
 }
 
 .column--left {
-  border: 1px solid red;
+  // border: 1px solid red;
   width: 38.6%;
 }
 
 .column--right {
   width: 56.3%;
-  border: 1px solid green;
-  min-height: 400rem;
+  // border: 1px solid green;
 }
 
 .page__header {
-  margin-bottom: 11.5rem;
+  margin-bottom: 11.6rem;
 }
 
 .page__section {
   margin-bottom: 7.1rem;
+
+  &:last-child {
+    margin-bottom: 14.78rem;
+  }
 }
 
 // for pixel-perfect
@@ -33,5 +36,9 @@
 }
 
 .profile.page__section {
+  margin-bottom: 6.8rem;
+}
+
+.contact.page__section {
   margin-bottom: 6.8rem;
 }

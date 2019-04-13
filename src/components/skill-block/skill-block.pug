@@ -1,0 +1,16 @@
+mixin skill-block(title, level)
+  - title = title || ''
+  - level = level || 0
+  - var n = 0
+  - var m = 0
+  - var remain = 12 - level
+  
+  .skill-block
+    .skill-block__title= title
+    .skill-block__row
+      while n < level
+        .skill-block__circle.skill-block__circle--filled
+        - n++
+      while m < remain
+        .skill-block__circle.skill-block__circle--blank
+        - m++

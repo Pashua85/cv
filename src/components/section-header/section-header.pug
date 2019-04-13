@@ -1,8 +1,9 @@
-mixin section-header(title, classNameIcon, classNameTitle, classNameLine, classNameSection)
-  - classNameIcon = classNameIcon || ''
-  - classNameTitle = classNameTitle || '' 
-  - classNameLine = classNameLine || ''
-  - classNameSection = classNameSection || ''
+mixin section-header(title)
+  - var classNameIcon = 'section-header__icon--' + title;
+  - var classNameTitle = 'section-header__title--' + title;
+  - var classNameLine = 'section-header__line--' + title;
+  - var classNameSection = 'section-header--' + title;
+  
   .section-header(class=classNameSection)
     .section-header__icon(class=classNameIcon)
     .section-header__title(class=classNameTitle)= title
