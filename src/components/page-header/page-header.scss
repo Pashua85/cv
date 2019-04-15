@@ -1,15 +1,15 @@
 .page-header {
-  padding-top: 2.3rem;
+  padding-top: 2.1rem;
 
   &__logo {
     display: block;
     background-color: $main-color;
     border-radius: 50%;
-    border: 2.2rem solid white;
+    border: 2.1rem solid white;
     box-shadow: 0 0 0 1px $main-color;
-    height: 35.84rem;
+    height: 35.6rem;
     margin: 0 auto 4.5rem;
-    width: 35.84rem;
+    width: 35.6rem;
   }
 
   &__title {
@@ -24,15 +24,15 @@
 
     &--bold {
       font-size: $xl-font;
-      margin-top: -2.8rem;
+      margin-top: -2.5rem;
       font-family: 'Myriad Pro Bold';
     }
   }
 
   &__subtitle {
     font-size: 3.8rem;
-    letter-spacing: .05rem;
-    margin-top: -.6rem;
+    letter-spacing: .1rem;
+    margin-top: -.7rem;
     padding-top: .2rem;
     text-align: center;
     text-transform: uppercase;

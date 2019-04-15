@@ -3,31 +3,29 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 11.4rem;
-  width: 90.4%;
+  padding-top: 11.7rem;
+  width: 90.2%;
   max-width: 1736px;
 }
 
 .column--left {
-  // border: 1px solid red;
   width: 38.6%;
 }
 
 .column--right {
-  width: 56.3%;
-  // border: 1px solid green;
+  width: 56.2%;
 }
 
 .page__header {
-  margin-bottom: 11.6rem;
+  margin-bottom: 11.3rem;
 }
 
 .page__section {
-  margin-bottom: 7.1rem;
+  margin-bottom: 6.8rem;
+}
 
-  &:last-child {
-    margin-bottom: 14.78rem;
-  }
+.column--right .page__section:last-child {
+  margin-bottom: 14.78rem;
 }
 
 // for pixel-perfect
@@ -35,10 +33,14 @@
   margin-bottom: 7.8rem;
 }
 
-.profile.page__section {
-  margin-bottom: 6.8rem;
+.contact.page__section {
+  margin-bottom: 7.3rem;
 }
 
-.contact.page__section {
-  margin-bottom: 6.8rem;
+.education.page__section {
+  margin-bottom: 7.2rem;
+}
+
+.experience.page__section {
+  margin-bottom: 7.4rem;
 }

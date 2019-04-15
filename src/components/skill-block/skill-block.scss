@@ -1,18 +1,17 @@
 .skill-block {
-  margin-bottom: 3.3rem;
+  margin-bottom: 3.4rem;
 
   &__title {
     text-align: center;
-    font-size: 4rem;
+    font-size: $m-font;
     text-transform: uppercase;
-    margin-bottom: .8rem;
+    margin-bottom: 1rem;
     //for pixil perfect:
-    margin-right: -1rem;
+    margin-right: -.7rem;
+    color: red;
   }
 
   &__row {
-    background-color: yellowgreen;
-
     display: flex;
     justify-content: center;
   }

@@ -2,8 +2,17 @@
   display: flex;
 
   align-items: center;
-  // border: thin solid green;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.9rem;
+
+  //for pixel-perfect
+  &--contact {
+    margin-bottom: 2rem;
+  }
+
+  //for pixel-perfect
+  &--experience {
+    margin-bottom: 1.5rem;
+  }
 
   &__icon {
     width: 11.07rem;;
@@ -17,13 +26,28 @@
       background-image: url('./components/section-header/images/PROFILE_ICON.png');
     }
 
+    &--contact {
+      background-image: url('./components/section-header/images/CONTACT_ICON.png');
+    }
+
+    &--skills {
+      background-image: url('./components/section-header/images/SKILLS_ICON.png');
+    }
+
     &--education {
       width: 11.45rem;
       background-image: url('./components/section-header/images/EDUCATION_ICON.png');
     }
 
+    &--experience {
+      width: 11.84rem;
+      height: 11.45rem;
+      background-image: url('./components/section-header/images/EXPERIENCE_ICON.png');
+    }
+
     &--software {
-      height: 11.07rem;
+      width: 11.45rem;
+      background-image: url('./components/section-header/images/SOFTWARE_ICON.png');
     }
   }
 
@@ -33,18 +57,50 @@
     font-family: 'Myriad Pro Bold';
     color: red;
     text-transform: uppercase;
-    margin: 0 1.3rem -.7rem 1.6rem;
+    margin: 0 1.3rem -1rem 1.6rem;
 
-    &--right {
-      margin: 0 1.3rem -.7rem 3rem;
+    &--contact {
+      margin: 0 1.3rem -.8rem 1.9rem; 
+    }
 
+    &--skills {
+      margin: 0 1.8rem -.8rem 1.7rem;
+    }
+
+    &--education {
+      margin: 0 1.3rem -.9rem 2.9rem;
+    }
+
+    &--experience {
+      margin: 0 1.3rem -1.2rem 2.5rem;
+    }
+
+    &--software {
+      margin: 0 2.5rem -1.7rem 2.8rem;
     }
   }
 
   &__line {
     height: .7rem;
-    margin-top: -.3rem;
+    margin-top: -.2rem;
     flex-grow: 1;
     background-color: red;
+
+    &--contact {
+      margin-top: -.4rem;
+    }
+
+    &--skills {
+      margin-top: -.5rem;
+    }
+
+    &--experience {
+      margin-top: 0;
+    }    
+
+    &--software {
+      margin-top: 0;
+      margin-bottom: -.3rem;
+    }
   }
 }
