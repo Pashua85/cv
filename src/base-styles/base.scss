@@ -8,6 +8,19 @@
 
 html {
   font-size: 62.5%;
+  
+  @include respond(mid-desktop) {
+    font-size: 41.666666667%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 29.296875%;
+  }
+
+  @include respond(phone) {
+    font-size: 25%;
+  }
+
   overflow-y: overlay;
 }
 

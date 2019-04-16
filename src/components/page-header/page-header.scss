@@ -10,6 +10,19 @@
     height: 35.6rem;
     margin: 0 auto 4.5rem;
     width: 35.6rem;
+
+    @include respond(tab-port) {
+      width: 23.73rem;
+      height: 23.73rem;
+      border: 1.43rem solid white;
+    }
+
+    @include respond(phone) {
+      width: 20rem;
+      height: 20rem;
+      border: 1.2rem solid white;
+      margin-bottom: 3.5rem;
+    }
   }
 
   &__title {
@@ -26,6 +39,10 @@
       font-size: $xl-font;
       margin-top: -2.5rem;
       font-family: 'Myriad Pro Bold';
+
+      @include respond(phone) {
+        margin-top: 0;
+      }
     }
   }
 

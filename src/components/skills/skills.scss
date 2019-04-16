@@ -1,6 +1,10 @@
 .skills {
   padding-right: 3.3rem;
 
+  @include respond(tab-port) {
+    padding-right: 0;
+  }
+
   &__list {
     padding-top: 1.7rem;
   }

@@ -1,7 +1,7 @@
 .soft {
   padding-top: 2.3rem;
   margin-bottom: 1.5rem;
-  
+  width: 44.5%;
 
   &__title {
     color: red;
@@ -11,10 +11,14 @@
   }
 
   &__scale {
-    width: 42.81rem;
+    width: 100%;
     height: 3.23rem;
     background-color: yellow;
     position: relative;
+
+    @include respond(tab-land) {
+      height: 3rem;
+    }
 
     &::before {
       content: '';

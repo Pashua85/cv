@@ -14,6 +14,12 @@
   &__row {
     display: flex;
     justify-content: center;
+
+    @include respond(phone) {
+      width: 80%;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
   }
 
   &__circle {
@@ -24,6 +30,10 @@
 
     &:not(:last-child) {
       margin-right: 1.55rem;
+
+      @include respond(phone) {
+        margin-right: 0;
+      }
     }
 
     &--filled {

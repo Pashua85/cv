@@ -6,22 +6,60 @@
   padding-top: 11.7rem;
   width: 90.2%;
   max-width: 1736px;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    padding-top: 9rem;
+    width: 70%;
+  }
 }
 
 .column--left {
   width: 38.6%;
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
 }
 
 .column--right {
   width: 56.2%;
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
 }
 
 .page__header {
   margin-bottom: 11.3rem;
+
+  @include respond(mid-desktop) {
+    margin-bottom: 11.4rem;
+  }
+
+  @include respond(tab-land) {
+    margin-bottom: 9.5rem;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 7rem;
+  }
 }
 
 .page__section {
   margin-bottom: 6.8rem;
+
+  @include respond(mid-desktop) {
+    margin-bottom: 7.2rem;
+  }
+}
+
+.page__section:last-child {
+  margin-bottom: 14.78rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 6.8rem;
+  }
 }
 
 .column--right .page__section:last-child {
@@ -39,8 +77,16 @@
 
 .education.page__section {
   margin-bottom: 7.2rem;
+
+  @include respond(mid-desktop) {
+    margin-bottom: 7.5rem;
+  }
 }
 
 .experience.page__section {
   margin-bottom: 7.4rem;
+
+  @include respond(mid-desktop) {
+    margin-bottom: 8rem;
+  }
 }

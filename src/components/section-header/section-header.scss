@@ -4,6 +4,10 @@
   align-items: center;
   margin-bottom: 1.9rem;
 
+  @include respond(mid-desktop) {
+    margin-bottom: 2.1rem;
+  }
+
   //for pixel-perfect
   &--contact {
     margin-bottom: 2rem;
@@ -85,6 +89,10 @@
     margin-top: -.2rem;
     flex-grow: 1;
     background-color: red;
+
+    // @include respond(narrow-phone) {
+    //   display: none;
+    // }
 
     &--contact {
       margin-top: -.4rem;

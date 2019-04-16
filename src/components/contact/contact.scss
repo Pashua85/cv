@@ -1,8 +1,16 @@
 .contact {
   padding-right: 2.75rem;
 
+  @include respond(tab-port) {
+    padding-right: 0;
+  }
+
   &__list {
     padding-top: 3.1rem;
+
+    @include respond(mid-desktop) {
+      padding-top: 3.2rem;
+    }
   }
 
   &__row:not(:last-child) {
@@ -17,10 +25,18 @@
     font-weight: 700;
     text-transform: uppercase;
     width: 30.3%;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
   }
 
   &__text {
     display: inline-block;
     font-size: 3.17rem;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
   }
 }

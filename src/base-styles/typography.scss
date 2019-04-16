@@ -33,4 +33,8 @@ body {
   font-size: $default-font-size;
   color: $default-font-color;
   line-height: 1.225;
+
+  @include respond(tab-land) {
+    font-size: $default-font-size-tab;
+  }
 }

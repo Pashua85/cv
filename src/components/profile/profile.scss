@@ -1,3 +1,7 @@
 .profile {
   padding-right: 2.85rem;
+
+  @include respond(tab-port) {
+    padding-right: 0;
+  }
 }
