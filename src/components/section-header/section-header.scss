@@ -59,7 +59,6 @@
     color: $main-color;
     font-size: $l-font;
     font-family: 'Myriad Pro Bold';
-    color: red;
     text-transform: uppercase;
     margin: 0 1.3rem -1rem 1.6rem;
 
@@ -108,7 +107,7 @@
     height: .7rem;
     margin-top: -.2rem;
     flex-grow: 1;
-    background-color: red;
+    background-color: $main-color;
 
     @include respond(narrow-phone) {
       display: none;

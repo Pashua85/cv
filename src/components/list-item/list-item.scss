@@ -17,7 +17,7 @@
     width: 3.1rem;
     height: 3.1rem;
     border-radius: 50%;
-    background-color: yellow;
+    background-color: $default-font-color;
     left: 0;
     top: 0;
     margin-top: .7rem;
@@ -43,10 +43,9 @@
     text-transform: uppercase;
     font-size: 3.94rem;
     font-family: 'Myriad Pro Bold';
-    color: yellow;
 
     &--blue {
-      color: red;
+      color: $main-color;
     }
   }
 
@@ -58,7 +57,6 @@
   }
 
   &__duration {
-    color: red;
     display: flex;
     font-size: 3.94rem;
 

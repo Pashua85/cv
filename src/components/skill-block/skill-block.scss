@@ -8,7 +8,6 @@
     margin-bottom: 1rem;
     //for pixil perfect:
     margin-right: -.7rem;
-    color: red;
   }
 
   &__row {
@@ -25,7 +24,7 @@
   &__circle {
     width: 2.7rem;
     height: 2.7rem;
-    background-color: yellow;
+    background-color: $grey-color;
     border-radius: 50%;
 
     &:not(:last-child) {
@@ -42,7 +41,7 @@
     }
 
     &--filled {
-      background-color: red;
+      background-color: $main-color;
     }
   }
 }
