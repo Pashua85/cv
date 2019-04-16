@@ -2,6 +2,10 @@
   padding-left: 8.2rem;
   position: relative;
 
+  @include respond(narrow-phone) {
+    padding-left: 6rem;
+  }
+
   &:not(:last-child) {
     margin-bottom: 1.8rem;
   }
@@ -18,11 +22,20 @@
     top: 0;
     margin-top: .7rem;
     margin-left: 1.8rem;
+
+    @include respond(narrow-phone) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 
   &__row {
     display: flex;
     margin-bottom: .4rem;
+
+    @include respond(narrow-phone) {
+      align-items: center;
+    }
   }
 
   &__title {
@@ -37,15 +50,35 @@
     }
   }
 
+  &__lines {
+
+    @include respond(narrow-phone) {
+      display: none;
+    }
+  }
+
   &__duration {
     color: red;
     display: flex;
     font-size: 3.94rem;
+
+    @include respond(narrow-phone) {
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
   }
 
   &__duration-start {
     margin-left: .9rem;
     margin-right: .9rem;
+
+    @include respond(narrow-phone) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__duration-dash {
+    display: none;
   }
 
   &__duration-end {

@@ -36,6 +36,11 @@
       }
     }
 
+    @include respond(narrow-phone) {
+      width: 2.1rem;
+      height: 2.1rem;
+    }
+
     &--filled {
       background-color: red;
     }

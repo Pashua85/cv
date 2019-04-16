@@ -5,5 +5,9 @@
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
+
+    @include respond(narrow-phone) {
+      justify-content: center;
+    }
   }
 }

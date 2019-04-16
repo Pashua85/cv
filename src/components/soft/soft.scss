@@ -8,6 +8,10 @@
     font-size: 4rem;
     text-transform: uppercase;
     margin-bottom: 1.8rem;
+
+    @include respond(narrow-phone) {
+      text-align: center;
+    }
   }
 
   &__scale {
@@ -20,6 +24,10 @@
       height: 3rem;
     }
 
+    @include respond(narrow-phone) {
+      height: 2.5rem;
+    }
+    
     &::before {
       content: '';
       display: table;
@@ -53,5 +61,9 @@
     &--html-css3::before {
       width: 91.1%;
     }
+  }
+
+  @include respond(narrow-phone) {
+    width: 60%;
   }
 }
