@@ -1,0 +1,455 @@
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../fonts/MyriadProRegular.eot);
+  src: url(../fonts/MyriadProRegular.woff) format("woff"), url(../fonts/MyriadProRegular.ttf) format("truetype"), url(../fonts/MyriadProRegular.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro Bold';
+  src: url(../fonts/MyriadProBold.eot);
+  src: url(../fonts/MyriadProBold.woff) format("woff"), url(../fonts/MyriadProBold.ttf) format("truetype"), url(../fonts/MyriadProBold.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro - Light Semi Ext';
+  src: url(../fonts/Myriad-Pro-Light-SemiExtended_31641.eot);
+  src: url(../fonts/Myriad-Pro-Light-SemiExtended_31641.woff) format("woff"), url(../fonts/Myriad-Pro-Light-SemiExtended_31641.ttf) format("truetype"), url(../fonts/Myriad-Pro-Light-SemiExtended_31641.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: 'Myriad Pro';
+  font-size: 2.4rem;
+  color: #000000;
+  line-height: 1.225; }
+  @media only screen and (max-width: 75em) {
+    body {
+      font-size: 3.5rem; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  overflow-y: overlay; }
+  @media only screen and (max-width: 112.5em) {
+    html {
+      font-size: 41.666666667%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 29.296875%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 25%; } }
+
+body {
+  box-sizing: border-box; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 11.7rem;
+  width: 90.2%;
+  max-width: 1736px; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      flex-direction: column;
+      padding-top: 9rem;
+      width: 70%; } }
+
+.column--left {
+  width: 38.6%; }
+  @media only screen and (max-width: 56.25em) {
+    .column--left {
+      width: 100%; } }
+
+.column--right {
+  width: 56.2%; }
+  @media only screen and (max-width: 56.25em) {
+    .column--right {
+      width: 100%; } }
+
+.page__header {
+  margin-bottom: 11.3rem; }
+  @media only screen and (max-width: 112.5em) {
+    .page__header {
+      margin-bottom: 11.4rem; } }
+  @media only screen and (max-width: 75em) {
+    .page__header {
+      margin-bottom: 9.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .page__header {
+      margin-bottom: 7rem; } }
+
+.page__section {
+  margin-bottom: 6.8rem; }
+  @media only screen and (max-width: 112.5em) {
+    .page__section {
+      margin-bottom: 7.2rem; } }
+
+.page__section:last-child {
+  margin-bottom: 14.78rem; }
+  @media only screen and (max-width: 56.25em) {
+    .page__section:last-child {
+      margin-bottom: 6.8rem; } }
+
+.column--right .page__section:last-child {
+  margin-bottom: 14.78rem; }
+
+.experience.page__section {
+  margin-bottom: 7.8rem; }
+
+.contact.page__section {
+  margin-bottom: 7.3rem; }
+
+.education.page__section {
+  margin-bottom: 7.2rem; }
+  @media only screen and (max-width: 112.5em) {
+    .education.page__section {
+      margin-bottom: 7.5rem; } }
+
+.experience.page__section {
+  margin-bottom: 7.4rem; }
+  @media only screen and (max-width: 112.5em) {
+    .experience.page__section {
+      margin-bottom: 8rem; } }
+
+.page-header {
+  padding-top: 2.1rem; }
+  .page-header__logo {
+    display: block;
+    background-color: #3d6cb0;
+    border-radius: 50%;
+    border: 2.1rem solid white;
+    box-shadow: 0 0 0 1px #3d6cb0;
+    height: 35.6rem;
+    margin: 0 auto 4.5rem;
+    width: 35.6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .page-header__logo {
+        width: 23.73rem;
+        height: 23.73rem;
+        border: 1.43rem solid white; } }
+    @media only screen and (max-width: 37.5em) {
+      .page-header__logo {
+        width: 20rem;
+        height: 20rem;
+        border: 1.2rem solid white;
+        margin-bottom: 3.5rem; } }
+  .page-header__title {
+    text-align: center;
+    text-transform: uppercase; }
+    .page-header__title--light {
+      font-family: 'Myriad Pro - Light Semi Ext';
+      font-weight: normal;
+      font-size: 8.3rem; }
+    .page-header__title--bold {
+      font-size: 9.52rem;
+      margin-top: -2.5rem;
+      font-family: 'Myriad Pro Bold'; }
+      @media only screen and (max-width: 37.5em) {
+        .page-header__title--bold {
+          margin-top: 0; } }
+  .page-header__subtitle {
+    font-size: 3.8rem;
+    letter-spacing: .1rem;
+    margin-top: -.7rem;
+    padding-top: .2rem;
+    text-align: center;
+    text-transform: uppercase; }
+
+.profile {
+  padding-right: 2.85rem; }
+  @media only screen and (max-width: 56.25em) {
+    .profile {
+      padding-right: 0; } }
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.9rem; }
+  @media only screen and (max-width: 112.5em) {
+    .section-header {
+      margin-bottom: 2.1rem; } }
+  .section-header--contact {
+    margin-bottom: 2rem; }
+  .section-header--experience {
+    margin-bottom: 1.5rem; }
+  .section-header__icon {
+    width: 11.07rem;
+    height: 11.07rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .section-header__icon--profile {
+      width: 11.45rem;
+      background-image: url(../images/PROFILE_ICON.png); }
+    .section-header__icon--contact {
+      background-image: url(../images/CONTACT_ICON.png); }
+    .section-header__icon--skills {
+      background-image: url(../images/SKILLS_ICON.png); }
+    .section-header__icon--education {
+      width: 11.45rem;
+      background-image: url(../images/EDUCATION_ICON.png); }
+    .section-header__icon--experience {
+      width: 11.84rem;
+      height: 11.45rem;
+      background-image: url(../images/EXPERIENCE_ICON.png); }
+    .section-header__icon--software {
+      width: 11.45rem;
+      background-image: url(../images/SOFTWARE_ICON.png); }
+  .section-header__title {
+    color: #3d6cb0;
+    font-size: 6.34rem;
+    font-family: 'Myriad Pro Bold';
+    text-transform: uppercase;
+    margin: 0 1.3rem -1rem 1.6rem; }
+    @media only screen and (max-width: 30em) {
+      .section-header__title {
+        margin-left: 2.9rem; } }
+    .section-header__title--contact {
+      margin: 0 1.3rem -.8rem 1.9rem; }
+      @media only screen and (max-width: 30em) {
+        .section-header__title--contact {
+          margin-left: 2.9rem; } }
+    .section-header__title--skills {
+      margin: 0 1.8rem -.8rem 1.7rem; }
+      @media only screen and (max-width: 30em) {
+        .section-header__title--skills {
+          margin-left: 2.9rem; } }
+    .section-header__title--education {
+      margin: 0 1.3rem -.9rem 2.9rem; }
+    .section-header__title--experience {
+      margin: 0 1.3rem -1.2rem 2.5rem; }
+      @media only screen and (max-width: 30em) {
+        .section-header__title--experience {
+          margin-left: 2.9rem; } }
+    .section-header__title--software {
+      margin: 0 2.5rem -1.7rem 2.8rem; }
+      @media only screen and (max-width: 30em) {
+        .section-header__title--software {
+          margin-left: 2.9rem; } }
+  .section-header__line {
+    height: .7rem;
+    margin-top: -.2rem;
+    flex-grow: 1;
+    background-color: #3d6cb0; }
+    @media only screen and (max-width: 30em) {
+      .section-header__line {
+        display: none; } }
+    .section-header__line--contact {
+      margin-top: -.4rem; }
+    .section-header__line--skills {
+      margin-top: -.5rem; }
+    .section-header__line--experience {
+      margin-top: 0; }
+    .section-header__line--software {
+      margin-top: 0;
+      margin-bottom: -.3rem; }
+
+.list {
+  list-style: none;
+  padding-top: 2.4rem; }
+
+.experience .list {
+  padding-top: 5rem; }
+
+.list-item {
+  padding-left: 8.2rem;
+  position: relative; }
+  @media only screen and (max-width: 30em) {
+    .list-item {
+      padding-left: 6rem; } }
+  .list-item:not(:last-child) {
+    margin-bottom: 1.8rem; }
+  .list-item::before {
+    display: table;
+    content: '';
+    position: absolute;
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 50%;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    margin-top: .7rem;
+    margin-left: 1.8rem; }
+    @media only screen and (max-width: 30em) {
+      .list-item::before {
+        width: 2.5rem;
+        height: 2.5rem; } }
+  .list-item__row {
+    display: flex;
+    margin-bottom: .4rem; }
+    @media only screen and (max-width: 30em) {
+      .list-item__row {
+        align-items: center; } }
+  .list-item__title {
+    margin-right: 2.6rem;
+    text-transform: uppercase;
+    font-size: 3.94rem;
+    font-family: 'Myriad Pro Bold'; }
+    .list-item__title--blue {
+      color: #3d6cb0; }
+  @media only screen and (max-width: 30em) {
+    .list-item__lines {
+      display: none; } }
+  .list-item__duration {
+    display: flex;
+    font-size: 3.94rem; }
+    @media only screen and (max-width: 30em) {
+      .list-item__duration {
+        font-size: 3rem;
+        text-transform: uppercase; } }
+  .list-item__duration-start {
+    margin-left: .9rem;
+    margin-right: .9rem; }
+    @media only screen and (max-width: 30em) {
+      .list-item__duration-start {
+        margin-right: 2rem; } }
+  .list-item__duration-dash {
+    display: none; }
+  .list-item__duration-end {
+    margin-left: .9rem; }
+  .list-item__subtitle {
+    font-size: 3.948rem;
+    text-transform: uppercase;
+    margin-bottom: .8rem; }
+
+.software__container {
+  padding-left: 1rem;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between; }
+  @media only screen and (max-width: 30em) {
+    .software__container {
+      justify-content: center; } }
+
+.soft {
+  padding-top: 2.3rem;
+  margin-bottom: 1.5rem;
+  width: 44.5%; }
+  .soft__title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 1.7rem; }
+    @media only screen and (max-width: 30em) {
+      .soft__title {
+        text-align: center; } }
+  .soft__scale {
+    width: 100%;
+    height: 3.23rem;
+    background-color: #e6e6e6;
+    position: relative; }
+    @media only screen and (max-width: 75em) {
+      .soft__scale {
+        height: 3rem; } }
+    @media only screen and (max-width: 30em) {
+      .soft__scale {
+        height: 2.5rem; } }
+    .soft__scale::before {
+      content: '';
+      display: table;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #3d6cb0;
+      height: 100%; }
+    .soft__scale--photoshop::before {
+      width: 91.1%; }
+    .soft__scale--dreamweaver::before {
+      width: 83.1%; }
+    .soft__scale--illustrator::before {
+      width: 70.5%; }
+    .soft__scale--after-effects::before {
+      width: 61.6%; }
+    .soft__scale--indesign::before {
+      width: 56.2%; }
+    .soft__scale--html-css3::before {
+      width: 91.1%; }
+  @media only screen and (max-width: 30em) {
+    .soft {
+      width: 60%; } }
+
+.contact {
+  padding-right: 2.75rem; }
+  @media only screen and (max-width: 56.25em) {
+    .contact {
+      padding-right: 0; } }
+  .contact__list {
+    padding-top: 3.1rem; }
+    @media only screen and (max-width: 112.5em) {
+      .contact__list {
+        padding-top: 3.2rem; } }
+  @media only screen and (max-width: 30em) {
+    .contact__row {
+      display: flex;
+      justify-content: space-between; } }
+  .contact__row:not(:last-child) {
+    margin-bottom: 4.6rem; }
+  .contact__title {
+    display: inline-block;
+    color: #3d6cb0;
+    font-size: 3.17rem;
+    font-family: 'Myriad Pro Bold';
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 30.3%; }
+    @media only screen and (max-width: 75em) {
+      .contact__title {
+        font-size: 4rem; } }
+  .contact__text {
+    display: inline-block;
+    font-size: 3.17rem; }
+    @media only screen and (max-width: 75em) {
+      .contact__text {
+        font-size: 4rem; } }
+
+.skills {
+  padding-right: 3.3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .skills {
+      padding-right: 0; } }
+  .skills__list {
+    padding-top: 1.7rem; }
+
+.skill-block {
+  margin-bottom: 3.4rem; }
+  .skill-block__title {
+    text-align: center;
+    font-size: 3.94rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-right: -.7rem; }
+  .skill-block__row {
+    display: flex;
+    justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .skill-block__row {
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between; } }
+  .skill-block__circle {
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: #e6e6e6;
+    border-radius: 50%; }
+    .skill-block__circle:not(:last-child) {
+      margin-right: 1.55rem; }
+      @media only screen and (max-width: 37.5em) {
+        .skill-block__circle:not(:last-child) {
+          margin-right: 0; } }
+    @media only screen and (max-width: 30em) {
+      .skill-block__circle {
+        width: 2.1rem;
+        height: 2.1rem; } }
+    .skill-block__circle--filled {
+      background-color: #3d6cb0; }
